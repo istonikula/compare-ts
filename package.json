@@ -1,0 +1,29 @@
+{
+  "name": "compare-ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/compare-ts.umd.cjs",
+  "module": "./dist/compare-ts.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/compare-ts.js",
+      "require": "./dist/compare-ts.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],  
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.5",
+    "typescript": "5.2.2",
+    "vite": "5.0.8",
+    "vite-plugin-dts": "3.7.1",
+    "vitest": "1.2.1"
+  }
+}
